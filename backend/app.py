@@ -316,5 +316,11 @@ def handle_unhandled_exception(e):
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     debug = os.environ.get("FLASK_DEBUG", "True") == "True"
-    logger.info(f"Starting Flask API Server on port {port}...")
-    app.run(host="0.0.0.0", port=port, debug=debug)
+    
+    if debug:
+        logger.info(f"Starting Flask API Server in development mode on port {port}...")
+        app.run(host="0.0.0.0", port=port, debug=True)
+    else:
+        logger.info(f"Starting Flask API Server in production mode (Waitress WSGI) on port {port}...")
+        from waitress import serve
+        serve(app, host="0.0.0.0", port=port)
