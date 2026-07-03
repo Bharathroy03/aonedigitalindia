@@ -289,6 +289,28 @@ def post_newsletter():
         logger.error(f"Unexpected newsletter API error: {str(e)}")
         return jsonify({"success": False, "error": "Internal server error."}), 500
 
+# ─── Flask Error Handlers ─────────────────────────────────────────────────────
+
+@app.errorhandler(404)
+def handle_404(e):
+    logger.warning(f"404 error: {request.path}")
+    return jsonify({"success": False, "error": "Endpoint not found."}), 404
+
+@app.errorhandler(405)
+def handle_405(e):
+    logger.warning(f"405 error: {request.method} {request.path}")
+    return jsonify({"success": False, "error": "Method not allowed."}), 405
+
+@app.errorhandler(500)
+def handle_500(e):
+    logger.error(f"500 error: {str(e)}")
+    return jsonify({"success": False, "error": "An internal server error occurred."}), 500
+
+@app.errorhandler(Exception)
+def handle_unhandled_exception(e):
+    logger.error(f"Unhandled exception: {str(e)}")
+    return jsonify({"success": False, "error": "An unexpected error occurred."}), 500
+
 # ─── App Execution ────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
