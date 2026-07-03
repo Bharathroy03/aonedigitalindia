@@ -1,22 +1,22 @@
 import type { Metadata } from 'next';
-import { Inter, Outfit } from 'next/font/google';
+import { Libre_Caslon_Text, Plus_Jakarta_Sans } from 'next/font/google';
 
 import '@/styles/globals.css';
 
 // ─── Fonts ────────────────────────────────────────────────────────────────────
 
-const inter = Inter({
+const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-body',
   preload: true,
 });
 
-const outfit = Outfit({
+const libreCaslonText = Libre_Caslon_Text({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-display',
-  weight: ['400', '500', '600', '700', '800', '900'],
+  weight: ['400', '700'],
   preload: true,
 });
 
@@ -103,7 +103,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${inter.variable} ${outfit.variable}`}
+      className={`${plusJakartaSans.variable} ${libreCaslonText.variable}`}
     >
       <body className="antialiased">
         {/* Skip link for accessibility */}

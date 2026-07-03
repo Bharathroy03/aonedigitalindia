@@ -198,20 +198,20 @@ Next.js automatically inlines critical CSS. For custom critical styles, add to `
 
 ```tsx
 // app/layout.tsx
-import { Inter, Outfit } from 'next/font/google';
+import { Libre_Caslon_Text, Plus_Jakarta_Sans } from 'next/font/google';
 
-const inter = Inter({
+const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ['latin'],
   display: 'swap',     // Prevent FOIT
   preload: true,
   variable: '--font-body',
 });
 
-const outfit = Outfit({
+const libreCaslonText = Libre_Caslon_Text({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-display',
-  weight: ['400', '600', '700', '800', '900'],
+  weight: ['400', '700'],
 });
 ```
 

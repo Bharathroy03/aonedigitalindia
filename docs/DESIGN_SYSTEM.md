@@ -117,9 +117,9 @@ export default {
 
 ```css
 :root {
-  --font-display:  'Outfit', sans-serif;   /* Headings */
-  --font-body:     'Inter', sans-serif;    /* Body text */
-  --font-mono:     'JetBrains Mono', monospace; /* Code */
+  --font-display:  'Libre Caslon Text', serif;  /* Headings, subheadings & descriptions */
+  --font-body:     'Plus Jakarta Sans', sans-serif; /* Buttons, nav & functional elements */
+  --font-mono:     'JetBrains Mono', monospace;
 }
 ```
 

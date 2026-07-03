@@ -114,7 +114,7 @@ export async function POST(request: NextRequest) {
     }
 
     // 2. Send email notification (non-blocking on DB failure)
-    await sendContactEmail(formData).catch((err) => {
+    await sendContactEmail(formData).catch((err: unknown) => {
       console.error('[api/contact] Email failed:', err);
     });
 

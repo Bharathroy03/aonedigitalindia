@@ -155,7 +155,7 @@ export default function ContactNotification({
   );
 }
 
-const bodyStyle = { backgroundColor: '#f8fafc', fontFamily: 'Inter, sans-serif' };
+const bodyStyle = { backgroundColor: '#f8fafc', fontFamily: 'Plus Jakarta Sans, sans-serif' };
 const containerStyle = { maxWidth: '600px', margin: '0 auto', padding: '24px', backgroundColor: '#fff' };
 const headingStyle = { color: '#1e3a8a', fontSize: '24px' };
 const footerStyle = { color: '#94a3b8', fontSize: '12px' };
