@@ -11,6 +11,31 @@
  */
 
 import { createClient } from '@supabase/supabase-js';
+import * as fs from 'fs';
+import * as path from 'path';
+
+function loadEnvLocal() {
+  try {
+    const envPath = path.resolve(process.cwd(), '.env.local');
+    if (fs.existsSync(envPath)) {
+      const content = fs.readFileSync(envPath, 'utf8');
+      content.split(/\r?\n/).forEach((line) => {
+        const trimmed = line.trim();
+        if (!trimmed || trimmed.startsWith('#')) return;
+        const index = trimmed.indexOf('=');
+        if (index > 0) {
+          const key = trimmed.substring(0, index).trim();
+          const val = trimmed.substring(index + 1).trim();
+          process.env[key] = val.replace(/^["']|["']$/g, '');
+        }
+      });
+    }
+  } catch (err: any) {
+    console.error('Failed to parse .env.local:', err.message);
+  }
+}
+
+loadEnvLocal();
 
 // ─── Local JSON data ──────────────────────────────────────────────────────────
 import brands from '../data/brands.json';

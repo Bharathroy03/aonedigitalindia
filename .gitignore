@@ -91,3 +91,13 @@ tmp/
 temp/
 *.zip
 *.tar.gz
+
+# ----------------------------------------------------------
+# Python & Virtual Environments
+# ----------------------------------------------------------
+venv/
+backend/venv/
+__pycache__/
+*.pyc
+.env
+backend/.env

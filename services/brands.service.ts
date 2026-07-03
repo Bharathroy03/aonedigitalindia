@@ -1,98 +1,64 @@
 /**
  * Brands Service
  *
- * All brand-related database queries.
- * These run server-side (Server Components, Route Handlers).
+ * Fetches brand-related data from the Python Flask API backend.
  */
 
-import { createServerClient } from '@/lib/supabase/server';
 import type { BrandRow } from '@/lib/supabase/types';
 
-// ─── Types ────────────────────────────────────────────────────────────────────
-
-export type BrandWithRelations = BrandRow;
-
-// ─── Queries ──────────────────────────────────────────────────────────────────
+const API_URL = process.env.NEXT_PUBLIC_FLASK_API_URL || 'http://127.0.0.1:5000';
 
 /**
  * Get all active brands, ordered by display order.
  */
 export async function getAllBrands(): Promise<BrandRow[]> {
-  const supabase = await createServerClient();
-
-  const { data, error } = await supabase
-    .from('brands')
-    .select('*')
-    .eq('active', true)
-    .order('order', { ascending: true });
-
-  if (error) {
-    console.error('[brands.service] getAllBrands:', error.message);
+  try {
+    const res = await fetch(`${API_URL}/api/brands`, {
+      next: { revalidate: 3600 }, // Cache for 1 hour
+    });
+    if (!res.ok) throw new Error(`HTTP error ${res.status}`);
+    return await res.json();
+  } catch (error: any) {
+    console.error('[brands.service] getAllBrands failed:', error.message);
     return [];
   }
-
-  return data ?? [];
 }
 
 /**
  * Get only featured brands.
  */
 export async function getFeaturedBrands(): Promise<BrandRow[]> {
-  const supabase = await createServerClient();
-
-  const { data, error } = await supabase
-    .from('brands')
-    .select('*')
-    .eq('active', true)
-    .eq('featured', true)
-    .order('order', { ascending: true });
-
-  if (error) {
-    console.error('[brands.service] getFeaturedBrands:', error.message);
+  try {
+    const brands = await getAllBrands();
+    return brands.filter((b) => b.featured);
+  } catch (error: any) {
+    console.error('[brands.service] getFeaturedBrands failed:', error.message);
     return [];
   }
-
-  return data ?? [];
 }
 
 /**
  * Get a single brand by slug.
  */
 export async function getBrandBySlug(slug: string): Promise<BrandRow | null> {
-  const supabase = await createServerClient();
-
-  const { data, error } = await supabase
-    .from('brands')
-    .select('*')
-    .eq('slug', slug)
-    .eq('active', true)
-    .single();
-
-  if (error) {
-    console.error('[brands.service] getBrandBySlug:', error.message);
+  try {
+    const brands = await getAllBrands();
+    return brands.find((b) => b.slug === slug) || null;
+  } catch (error: any) {
+    console.error('[brands.service] getBrandBySlug failed:', error.message);
     return null;
   }
-
-  return data;
 }
 
 /**
  * Get brands filtered by category (e.g., 'mobile', 'appliances').
  */
 export async function getBrandsByCategory(category: string): Promise<BrandRow[]> {
-  const supabase = await createServerClient();
-
-  const { data, error } = await supabase
-    .from('brands')
-    .select('*')
-    .eq('active', true)
-    .contains('category', [category])
-    .order('order', { ascending: true });
-
-  if (error) {
-    console.error('[brands.service] getBrandsByCategory:', error.message);
+  try {
+    const brands = await getAllBrands();
+    return brands.filter((b) => b.category && b.category.includes(category));
+  } catch (error: any) {
+    console.error('[brands.service] getBrandsByCategory failed:', error.message);
     return [];
   }
-
-  return data ?? [];
 }
