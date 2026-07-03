@@ -1,0 +1,62 @@
+[
+  {
+    "id": "gallery-001",
+    "title": "Store Exterior",
+    "description": "Aone Digital India store front view",
+    "image": "/images/store/store-exterior.webp",
+    "thumbnail": "/images/store/store-exterior-thumb.webp",
+    "category": "store",
+    "featured": true,
+    "order": 1
+  },
+  {
+    "id": "gallery-002",
+    "title": "Samsung Display Zone",
+    "description": "Premium Samsung product showcase section",
+    "image": "/images/store/samsung-display.webp",
+    "thumbnail": "/images/store/samsung-display-thumb.webp",
+    "category": "brands",
+    "featured": true,
+    "order": 2
+  },
+  {
+    "id": "gallery-003",
+    "title": "Apple Experience Zone",
+    "description": "Dedicated Apple product display and experience area",
+    "image": "/images/store/apple-zone.webp",
+    "thumbnail": "/images/store/apple-zone-thumb.webp",
+    "category": "brands",
+    "featured": true,
+    "order": 3
+  },
+  {
+    "id": "gallery-004",
+    "title": "Home Appliances Section",
+    "description": "Washing machines, refrigerators, and ACs display area",
+    "image": "/images/store/appliances-section.webp",
+    "thumbnail": "/images/store/appliances-section-thumb.webp",
+    "category": "appliances",
+    "featured": true,
+    "order": 4
+  },
+  {
+    "id": "gallery-005",
+    "title": "TV & Entertainment Zone",
+    "description": "4K, OLED, and Smart TV showcase wall",
+    "image": "/images/store/tv-zone.webp",
+    "thumbnail": "/images/store/tv-zone-thumb.webp",
+    "category": "store",
+    "featured": false,
+    "order": 5
+  },
+  {
+    "id": "gallery-006",
+    "title": "Customer Service Desk",
+    "description": "Our friendly customer service team ready to assist",
+    "image": "/images/store/customer-service.webp",
+    "thumbnail": "/images/store/customer-service-thumb.webp",
+    "category": "team",
+    "featured": false,
+    "order": 6
+  }
+]

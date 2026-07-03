@@ -1,0 +1,54 @@
+[
+  {
+    "id": "t-001",
+    "name": "Rajesh Kumar",
+    "location": "Mumbai, Maharashtra",
+    "avatar": "/images/testimonials/avatar-1.webp",
+    "rating": 5,
+    "review": "Excellent service! Bought a Samsung S25 Ultra and the staff was very knowledgeable. They helped me compare different models and I got the best deal. Highly recommend Aone Digital India!",
+    "product": "Samsung Galaxy S25 Ultra",
+    "date": "2025-06-15",
+    "verified": true,
+    "featured": true,
+    "order": 1
+  },
+  {
+    "id": "t-002",
+    "name": "Priya Sharma",
+    "location": "Pune, Maharashtra",
+    "avatar": "/images/testimonials/avatar-2.webp",
+    "rating": 5,
+    "review": "Amazing experience! The store has a huge collection of home appliances. The staff helped me choose the perfect washing machine within my budget. The demo before purchase was very helpful.",
+    "product": "LG Front Load Washing Machine",
+    "date": "2025-06-10",
+    "verified": true,
+    "featured": true,
+    "order": 2
+  },
+  {
+    "id": "t-003",
+    "name": "Amit Patel",
+    "location": "Ahmedabad, Gujarat",
+    "avatar": "/images/testimonials/avatar-3.webp",
+    "rating": 5,
+    "review": "Got my iPhone 16 Pro Max here at the best price in the city. Genuine product, proper bill, and 0% EMI option made it even better. Will definitely come back for my next purchase!",
+    "product": "Apple iPhone 16 Pro Max",
+    "date": "2025-05-28",
+    "verified": true,
+    "featured": true,
+    "order": 3
+  },
+  {
+    "id": "t-004",
+    "name": "Sneha Reddy",
+    "location": "Hyderabad, Telangana",
+    "avatar": "/images/testimonials/avatar-4.webp",
+    "rating": 4,
+    "review": "Great store with genuine products and competitive prices. The after-sales support is excellent too. Had a minor issue with my AC and they resolved it promptly.",
+    "product": "Samsung Split AC",
+    "date": "2025-05-20",
+    "verified": true,
+    "featured": false,
+    "order": 4
+  }
+]

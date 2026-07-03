@@ -1,0 +1,50 @@
+{
+  "main": [
+    {
+      "id": "home",
+      "label": "Home",
+      "href": "/",
+      "order": 1
+    },
+    {
+      "id": "brands",
+      "label": "Brands",
+      "href": "/brands",
+      "order": 2,
+      "hasDropdown": false
+    },
+    {
+      "id": "categories",
+      "label": "Categories",
+      "href": "/categories",
+      "order": 3,
+      "hasDropdown": true,
+      "dropdown": [
+        { "label": "Smartphones", "href": "/categories/smartphones" },
+        { "label": "Washing Machines", "href": "/categories/washing-machines" },
+        { "label": "Refrigerators", "href": "/categories/refrigerators" },
+        { "label": "Televisions", "href": "/categories/televisions" },
+        { "label": "Air Conditioners", "href": "/categories/air-conditioners" }
+      ]
+    },
+    {
+      "id": "offers",
+      "label": "Offers",
+      "href": "/offers",
+      "order": 4,
+      "badge": "Hot"
+    },
+    {
+      "id": "gallery",
+      "label": "Gallery",
+      "href": "/gallery",
+      "order": 5
+    },
+    {
+      "id": "contact",
+      "label": "Contact",
+      "href": "/contact",
+      "order": 6
+    }
+  ]
+}

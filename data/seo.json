@@ -1,0 +1,40 @@
+{
+  "default": {
+    "title": "Aone Digital India — Premium Mobile Phones & Home Appliances Store",
+    "description": "Shop the latest mobile phones and home appliances at Aone Digital India. Best prices on Samsung, Apple, OnePlus, LG, Whirlpool and more. Visit us today!",
+    "keywords": ["mobile phones", "home appliances", "electronics store India", "Samsung", "Apple", "OnePlus", "Aone Digital India"],
+    "ogImage": "/images/og/og-home.jpg"
+  },
+  "pages": {
+    "/": {
+      "title": "Aone Digital India — Your Trusted Electronics Destination",
+      "description": "Discover premium mobile phones and home appliances at Aone Digital India. Top brands, genuine products, best prices, and excellent after-sales service.",
+      "ogImage": "/images/og/og-home.jpg"
+    },
+    "/about": {
+      "title": "About Us | Aone Digital India",
+      "description": "Learn about Aone Digital India — your trusted partner for premium electronics since [Year]. Authorized dealer for Samsung, Apple, LG, and more.",
+      "ogImage": "/images/og/og-about.jpg"
+    },
+    "/brands": {
+      "title": "Top Brands | Aone Digital India",
+      "description": "Explore top mobile and appliance brands at Aone Digital India — Samsung, Apple, OnePlus, LG, Whirlpool, and many more.",
+      "ogImage": "/images/og/og-brands.jpg"
+    },
+    "/categories": {
+      "title": "Product Categories | Aone Digital India",
+      "description": "Shop by category — smartphones, washing machines, refrigerators, ACs, TVs, and more at Aone Digital India.",
+      "ogImage": "/images/og/og-categories.jpg"
+    },
+    "/offers": {
+      "title": "Latest Offers & Deals | Aone Digital India",
+      "description": "Grab the best deals on mobile phones and home appliances at Aone Digital India. Limited period offers and EMI options available.",
+      "ogImage": "/images/og/og-offers.jpg"
+    },
+    "/contact": {
+      "title": "Contact Us | Aone Digital India",
+      "description": "Get in touch with Aone Digital India. Visit our store, call us, or send us a message. We're here to help!",
+      "ogImage": "/images/og/og-contact.jpg"
+    }
+  }
+}

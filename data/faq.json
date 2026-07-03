@@ -1,0 +1,58 @@
+[
+  {
+    "id": "faq-001",
+    "question": "What brands do you sell at Aone Digital India?",
+    "answer": "We stock a wide range of top brands including Samsung, Apple, OnePlus, Realme, Xiaomi, Vivo, OPPO, LG, Whirlpool, Bosch, Sony, and Panasonic — covering smartphones, home appliances, TVs, and more.",
+    "category": "general",
+    "order": 1,
+    "featured": true
+  },
+  {
+    "id": "faq-002",
+    "question": "Do you offer EMI options?",
+    "answer": "Yes! We offer 0% EMI options on select products with major credit cards and finance partners. EMI options typically range from 3 to 24 months. Please visit our store or contact us for the latest EMI offers.",
+    "category": "payment",
+    "order": 2,
+    "featured": true
+  },
+  {
+    "id": "faq-003",
+    "question": "Are all products genuine with warranty?",
+    "answer": "Absolutely. All products at Aone Digital India are 100% genuine, sourced directly from authorized distributors. Every product comes with a valid manufacturer warranty and an official GST bill.",
+    "category": "warranty",
+    "order": 3,
+    "featured": true
+  },
+  {
+    "id": "faq-004",
+    "question": "Do you offer home delivery?",
+    "answer": "Yes, we offer home delivery for all major appliances. Delivery and installation services are available in our service area. Please contact us to check availability in your location.",
+    "category": "delivery",
+    "order": 4,
+    "featured": true
+  },
+  {
+    "id": "faq-005",
+    "question": "Can I exchange my old device?",
+    "answer": "Yes, we accept old smartphones and appliances for exchange. The exchange value depends on the condition, age, and model of your device. Visit our store for a free evaluation.",
+    "category": "exchange",
+    "order": 5,
+    "featured": true
+  },
+  {
+    "id": "faq-006",
+    "question": "What are your store timings?",
+    "answer": "Our store is open Monday to Saturday, 10:00 AM to 8:00 PM. We are closed on select public holidays. You can also contact us via WhatsApp for inquiries outside store hours.",
+    "category": "general",
+    "order": 6,
+    "featured": false
+  },
+  {
+    "id": "faq-007",
+    "question": "Do you provide after-sales service?",
+    "answer": "Yes, we provide excellent after-sales support. For warranty-related issues, we help coordinate with the brand's authorized service center. Contact our support team at support@aonedigitalindia.com.",
+    "category": "service",
+    "order": 7,
+    "featured": false
+  }
+]

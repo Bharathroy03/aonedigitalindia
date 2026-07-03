@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# Disallow admin and API routes
+Disallow: /api/
+Disallow: /_next/
+
+# Crawl delay for politeness
+Crawl-delay: 10
+
+# Sitemap location
+Sitemap: https://www.aonedigitalindia.com/sitemap.xml
+
+# Google Bot specific
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 5
+
+# Bing Bot specific
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 10

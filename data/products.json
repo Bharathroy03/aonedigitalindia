@@ -1,0 +1,82 @@
+[
+  {
+    "id": "prod-001",
+    "name": "Samsung Galaxy S25 Ultra",
+    "slug": "samsung-galaxy-s25-ultra",
+    "brand": "samsung",
+    "category": "smartphones",
+    "image": "/images/products/samsung-s25-ultra.webp",
+    "price": 129999,
+    "originalPrice": 149999,
+    "discount": 13,
+    "currency": "INR",
+    "badge": "Best Seller",
+    "rating": 4.8,
+    "reviewCount": 0,
+    "inStock": true,
+    "featured": true,
+    "description": "Flagship Samsung smartphone with S Pen, 200MP camera, and AI features.",
+    "specifications": {
+      "display": "6.9\" Dynamic AMOLED 2X",
+      "processor": "Snapdragon 8 Elite",
+      "ram": "12GB",
+      "storage": "256GB",
+      "camera": "200MP + 50MP + 10MP + 12MP",
+      "battery": "5000mAh"
+    },
+    "order": 1
+  },
+  {
+    "id": "prod-002",
+    "name": "Apple iPhone 16 Pro Max",
+    "slug": "apple-iphone-16-pro-max",
+    "brand": "apple",
+    "category": "smartphones",
+    "image": "/images/products/iphone-16-pro-max.webp",
+    "price": 139900,
+    "originalPrice": 149900,
+    "discount": 7,
+    "currency": "INR",
+    "badge": "New Arrival",
+    "rating": 4.9,
+    "reviewCount": 0,
+    "inStock": true,
+    "featured": true,
+    "description": "The most powerful iPhone ever with A18 Pro chip and Camera Control.",
+    "specifications": {
+      "display": "6.9\" Super Retina XDR OLED",
+      "processor": "Apple A18 Pro",
+      "ram": "8GB",
+      "storage": "256GB",
+      "camera": "48MP + 48MP + 12MP",
+      "battery": "4685mAh"
+    },
+    "order": 2
+  },
+  {
+    "id": "prod-003",
+    "name": "Samsung 8 kg Front Load Washing Machine",
+    "slug": "samsung-8kg-front-load-wm",
+    "brand": "samsung",
+    "category": "washing-machines",
+    "image": "/images/products/samsung-wm-8kg.webp",
+    "price": 38999,
+    "originalPrice": 52000,
+    "discount": 25,
+    "currency": "INR",
+    "badge": "Hot Deal",
+    "rating": 4.6,
+    "reviewCount": 0,
+    "inStock": true,
+    "featured": true,
+    "description": "AI-powered front load washing machine with EcoBubble technology.",
+    "specifications": {
+      "capacity": "8 kg",
+      "type": "Front Load",
+      "energyRating": "5 Star",
+      "rpm": "1400",
+      "warranty": "3 Years"
+    },
+    "order": 3
+  }
+]

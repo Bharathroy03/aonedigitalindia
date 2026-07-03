@@ -1,0 +1,281 @@
+/* =============================================================
+   AONE DIGITAL INDIA — GLOBAL STYLES
+   =============================================================
+   This file imports all global styles and sets up the design
+   system tokens using CSS custom properties.
+   ============================================================= */
+
+@import 'tailwindcss';
+
+/* ----------------------------------------------------------
+   GOOGLE FONTS
+   ---------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* ----------------------------------------------------------
+   COLOR TOKENS — LIGHT THEME (DEFAULT)
+   ---------------------------------------------------------- */
+:root {
+  /* Brand — Electric Blue */
+  --color-brand-50:  #eff6ff;
+  --color-brand-100: #dbeafe;
+  --color-brand-200: #bfdbfe;
+  --color-brand-300: #93c5fd;
+  --color-brand-400: #60a5fa;
+  --color-brand-500: #3b82f6;
+  --color-brand-600: #2563eb;
+  --color-brand-700: #1d4ed8;
+  --color-brand-800: #1e40af;
+  --color-brand-900: #1e3a8a;
+  --color-brand-950: #172554;
+
+  /* Accent — Gold */
+  --color-accent-50:  #fffbeb;
+  --color-accent-100: #fef3c7;
+  --color-accent-200: #fde68a;
+  --color-accent-300: #fcd34d;
+  --color-accent-400: #fbbf24;
+  --color-accent-500: #f59e0b;
+  --color-accent-600: #d97706;
+  --color-accent-700: #b45309;
+  --color-accent-800: #92400e;
+  --color-accent-900: #78350f;
+
+  /* Semantic Colors */
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-error:   #ef4444;
+  --color-info:    #3b82f6;
+
+  /* Typography */
+  --font-display: 'Outfit', sans-serif;
+  --font-body:    'Inter', sans-serif;
+
+  /* Theme — Light */
+  --bg-primary:   #ffffff;
+  --bg-secondary: #f8fafc;
+  --bg-tertiary:  #f1f5f9;
+  --text-primary:   #0f172a;
+  --text-secondary: #475569;
+  --text-muted:     #94a3b8;
+  --border-color:   #e2e8f0;
+
+  /* Layout */
+  --header-height: 72px;
+  --container-max: 1280px;
+  --section-py:    80px;
+
+  /* Transitions */
+  --transition-fast:   150ms ease;
+  --transition-base:   300ms ease;
+  --transition-slow:   500ms ease;
+  --transition-spring: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ----------------------------------------------------------
+   DARK THEME
+   ---------------------------------------------------------- */
+[data-theme='dark'],
+.dark {
+  --bg-primary:   #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-tertiary:  #334155;
+  --text-primary:   #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted:     #64748b;
+  --border-color:   #334155;
+}
+
+/* ----------------------------------------------------------
+   BASE RESET & DEFAULTS
+   ---------------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* ----------------------------------------------------------
+   SKIP LINK (ACCESSIBILITY)
+   ---------------------------------------------------------- */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-brand-600);
+  color: white;
+  padding: 8px 16px;
+  z-index: 100;
+  border-radius: 0 0 8px 0;
+  transition: top 0.2s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* ----------------------------------------------------------
+   FOCUS STYLES (ACCESSIBILITY)
+   ---------------------------------------------------------- */
+:focus-visible {
+  outline: 2px solid var(--color-brand-600);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ----------------------------------------------------------
+   SCROLLBAR STYLES
+   ---------------------------------------------------------- */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-300);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-500);
+}
+
+/* ----------------------------------------------------------
+   SELECTION
+   ---------------------------------------------------------- */
+::selection {
+  background: var(--color-brand-200);
+  color: var(--color-brand-900);
+}
+
+/* ----------------------------------------------------------
+   TYPOGRAPHY
+   ---------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text-primary);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ----------------------------------------------------------
+   UTILITY CLASSES
+   ---------------------------------------------------------- */
+
+/* Container */
+.container-site {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-site { padding-inline: 1.5rem; }
+}
+
+@media (min-width: 1024px) {
+  .container-site { padding-inline: 2rem; }
+}
+
+/* Section spacing */
+.section-padding {
+  padding-block: var(--section-py);
+}
+
+/* Glass card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, var(--color-brand-600) 0%, var(--color-accent-500) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Hero gradient */
+.gradient-hero {
+  background: linear-gradient(
+    135deg,
+    var(--color-brand-950) 0%,
+    var(--color-brand-900) 30%,
+    var(--color-brand-800) 60%,
+    var(--color-brand-700) 100%
+  );
+}
+
+/* ----------------------------------------------------------
+   ANIMATIONS
+   ---------------------------------------------------------- */
+
+@keyframes shimmer {
+  from { background-position: -200% 0; }
+  to   { background-position:  200% 0; }
+}
+
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--bg-secondary) 25%,
+    var(--bg-tertiary) 50%,
+    var(--bg-secondary) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s linear infinite;
+  border-radius: 8px;
+}
+
+/* ----------------------------------------------------------
+   REDUCED MOTION
+   ---------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,90 @@
+[
+  {
+    "id": "smartphones",
+    "name": "Smartphones",
+    "slug": "smartphones",
+    "icon": "Smartphone",
+    "image": "/images/categories/smartphones.webp",
+    "description": "Latest smartphones from top brands — Samsung, Apple, OnePlus, and more.",
+    "featured": true,
+    "itemCount": 0,
+    "order": 1
+  },
+  {
+    "id": "washing-machines",
+    "name": "Washing Machines",
+    "slug": "washing-machines",
+    "icon": "Waves",
+    "image": "/images/categories/washing-machines.webp",
+    "description": "Front-load and top-load washing machines from leading brands.",
+    "featured": true,
+    "itemCount": 0,
+    "order": 2
+  },
+  {
+    "id": "refrigerators",
+    "name": "Refrigerators",
+    "slug": "refrigerators",
+    "icon": "Refrigerator",
+    "image": "/images/categories/refrigerators.webp",
+    "description": "Single door, double door, and side-by-side refrigerators.",
+    "featured": true,
+    "itemCount": 0,
+    "order": 3
+  },
+  {
+    "id": "televisions",
+    "name": "Televisions",
+    "slug": "televisions",
+    "icon": "Tv",
+    "image": "/images/categories/televisions.webp",
+    "description": "4K, OLED, QLED, and Smart TVs from Samsung, LG, Sony, and more.",
+    "featured": true,
+    "itemCount": 0,
+    "order": 4
+  },
+  {
+    "id": "air-conditioners",
+    "name": "Air Conditioners",
+    "slug": "air-conditioners",
+    "icon": "Wind",
+    "image": "/images/categories/air-conditioners.webp",
+    "description": "Split ACs, window ACs, and portable ACs with inverter technology.",
+    "featured": true,
+    "itemCount": 0,
+    "order": 5
+  },
+  {
+    "id": "laptops",
+    "name": "Laptops",
+    "slug": "laptops",
+    "icon": "Laptop",
+    "image": "/images/categories/laptops.webp",
+    "description": "Gaming, ultrabook, and business laptops from top brands.",
+    "featured": false,
+    "itemCount": 0,
+    "order": 6
+  },
+  {
+    "id": "audio",
+    "name": "Audio & Headphones",
+    "slug": "audio",
+    "icon": "Headphones",
+    "image": "/images/categories/audio.webp",
+    "description": "True wireless earbuds, headphones, speakers, and soundbars.",
+    "featured": false,
+    "itemCount": 0,
+    "order": 7
+  },
+  {
+    "id": "wearables",
+    "name": "Smartwatches & Wearables",
+    "slug": "wearables",
+    "icon": "Watch",
+    "image": "/images/categories/wearables.webp",
+    "description": "Smart watches, fitness bands, and health monitoring devices.",
+    "featured": false,
+    "itemCount": 0,
+    "order": 8
+  }
+]

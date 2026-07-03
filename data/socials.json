@@ -1,0 +1,52 @@
+[
+  {
+    "id": "facebook",
+    "name": "Facebook",
+    "label": "Follow on Facebook",
+    "url": "https://www.facebook.com/aonedigitalindia",
+    "icon": "Facebook",
+    "color": "#1877F2",
+    "active": true,
+    "order": 1
+  },
+  {
+    "id": "instagram",
+    "name": "Instagram",
+    "label": "Follow on Instagram",
+    "url": "https://www.instagram.com/aonedigitalindia",
+    "icon": "Instagram",
+    "color": "#E4405F",
+    "active": true,
+    "order": 2
+  },
+  {
+    "id": "youtube",
+    "name": "YouTube",
+    "label": "Subscribe on YouTube",
+    "url": "https://www.youtube.com/@aonedigitalindia",
+    "icon": "Youtube",
+    "color": "#FF0000",
+    "active": true,
+    "order": 3
+  },
+  {
+    "id": "whatsapp",
+    "name": "WhatsApp",
+    "label": "Chat on WhatsApp",
+    "url": "https://wa.me/91XXXXXXXXXX",
+    "icon": "MessageCircle",
+    "color": "#25D366",
+    "active": true,
+    "order": 4
+  },
+  {
+    "id": "twitter",
+    "name": "X (Twitter)",
+    "label": "Follow on X",
+    "url": "https://twitter.com/aonedigitalindia",
+    "icon": "Twitter",
+    "color": "#1DA1F2",
+    "active": false,
+    "order": 5
+  }
+]

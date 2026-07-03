@@ -1,0 +1,34 @@
+{
+  "company": {
+    "name": "Aone Digital India",
+    "tagline": "Your Trusted Electronics Destination",
+    "website": "https://www.aonedigitalindia.com",
+    "email": "info@aonedigitalindia.com",
+    "supportEmail": "support@aonedigitalindia.com",
+    "phone": "+91 XXXXX XXXXX",
+    "whatsapp": "91XXXXXXXXXX",
+    "address": {
+      "street": "[Store Address Placeholder]",
+      "city": "[City]",
+      "state": "[State]",
+      "pinCode": "[PIN Code]",
+      "country": "India",
+      "full": "[Store Address], [City], [State] - [PIN Code], India"
+    },
+    "coordinates": {
+      "lat": 0.0,
+      "lng": 0.0
+    },
+    "googleMapsUrl": "https://maps.google.com/?q=Aone+Digital+India",
+    "googleMapsEmbed": "https://www.google.com/maps/embed?pb=..."
+  },
+  "businessHours": [
+    { "day": "Monday",    "open": "10:00", "close": "20:00", "closed": false },
+    { "day": "Tuesday",   "open": "10:00", "close": "20:00", "closed": false },
+    { "day": "Wednesday", "open": "10:00", "close": "20:00", "closed": false },
+    { "day": "Thursday",  "open": "10:00", "close": "20:00", "closed": false },
+    { "day": "Friday",    "open": "10:00", "close": "20:00", "closed": false },
+    { "day": "Saturday",  "open": "10:00", "close": "20:00", "closed": false },
+    { "day": "Sunday",    "open": "11:00", "close": "18:00", "closed": false }
+  ]
+}

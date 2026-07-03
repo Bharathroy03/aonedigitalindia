@@ -1,0 +1,53 @@
+[
+  {
+    "id": "offer-001",
+    "title": "Smartphone Mega Sale",
+    "subtitle": "Up to 30% Off on Top Brands",
+    "description": "Get unbeatable deals on Samsung, Apple, OnePlus, and more. Limited period offer.",
+    "discountLabel": "Up to 30% Off",
+    "image": "/banners/offer-smartphone-sale.webp",
+    "ctaText": "Shop Now",
+    "ctaLink": "/categories/smartphones",
+    "validFrom": "2025-07-01",
+    "validUntil": "2025-07-31",
+    "featured": true,
+    "badge": "Limited Time",
+    "badgeColor": "red",
+    "order": 1,
+    "active": true
+  },
+  {
+    "id": "offer-002",
+    "title": "Home Appliance Bonanza",
+    "subtitle": "Zero Cost EMI Available",
+    "description": "Purchase any home appliance with zero interest EMI. No hidden charges.",
+    "discountLabel": "0% EMI",
+    "image": "/banners/offer-appliance-emi.webp",
+    "ctaText": "Explore Deals",
+    "ctaLink": "/categories/washing-machines",
+    "validFrom": "2025-07-01",
+    "validUntil": "2025-08-31",
+    "featured": true,
+    "badge": "Zero Cost EMI",
+    "badgeColor": "green",
+    "order": 2,
+    "active": true
+  },
+  {
+    "id": "offer-003",
+    "title": "AC Summer Offer",
+    "subtitle": "Best Prices + Free Installation",
+    "description": "Stay cool this summer with premium ACs at unbeatable prices. Includes free installation.",
+    "discountLabel": "Free Installation",
+    "image": "/banners/offer-ac-summer.webp",
+    "ctaText": "View ACs",
+    "ctaLink": "/categories/air-conditioners",
+    "validFrom": "2025-06-01",
+    "validUntil": "2025-09-30",
+    "featured": false,
+    "badge": "Summer Special",
+    "badgeColor": "blue",
+    "order": 3,
+    "active": true
+  }
+]

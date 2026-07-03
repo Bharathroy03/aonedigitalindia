@@ -1,0 +1,122 @@
+[
+  {
+    "id": "samsung",
+    "name": "Samsung",
+    "slug": "samsung",
+    "logo": "/brands/samsung.webp",
+    "category": ["mobile", "appliances", "tv"],
+    "description": "World's leading electronics brand offering smartphones, TVs, and home appliances.",
+    "featured": true,
+    "order": 1
+  },
+  {
+    "id": "apple",
+    "name": "Apple",
+    "slug": "apple",
+    "logo": "/brands/apple.webp",
+    "category": ["mobile", "wearables"],
+    "description": "Premium smartphones, tablets, and accessories from Apple.",
+    "featured": true,
+    "order": 2
+  },
+  {
+    "id": "oneplus",
+    "name": "OnePlus",
+    "slug": "oneplus",
+    "logo": "/brands/oneplus.webp",
+    "category": ["mobile"],
+    "description": "Never Settle — flagship-grade smartphones at competitive prices.",
+    "featured": true,
+    "order": 3
+  },
+  {
+    "id": "realme",
+    "name": "Realme",
+    "slug": "realme",
+    "logo": "/brands/realme.webp",
+    "category": ["mobile"],
+    "description": "Feature-rich smartphones for the young and bold.",
+    "featured": true,
+    "order": 4
+  },
+  {
+    "id": "xiaomi",
+    "name": "Xiaomi",
+    "slug": "xiaomi",
+    "logo": "/brands/xiaomi.webp",
+    "category": ["mobile", "appliances"],
+    "description": "Innovation for everyone — smartphones and smart home products.",
+    "featured": true,
+    "order": 5
+  },
+  {
+    "id": "vivo",
+    "name": "Vivo",
+    "slug": "vivo",
+    "logo": "/brands/vivo.webp",
+    "category": ["mobile"],
+    "description": "Camera-centric smartphones with stylish designs.",
+    "featured": false,
+    "order": 6
+  },
+  {
+    "id": "oppo",
+    "name": "OPPO",
+    "slug": "oppo",
+    "logo": "/brands/oppo.webp",
+    "category": ["mobile"],
+    "description": "Capture the moment with OPPO's exceptional camera phones.",
+    "featured": false,
+    "order": 7
+  },
+  {
+    "id": "lg",
+    "name": "LG",
+    "slug": "lg",
+    "logo": "/brands/lg.webp",
+    "category": ["appliances", "tv"],
+    "description": "Life's Good with LG's innovative home appliances and OLED TVs.",
+    "featured": true,
+    "order": 8
+  },
+  {
+    "id": "whirlpool",
+    "name": "Whirlpool",
+    "slug": "whirlpool",
+    "logo": "/brands/whirlpool.webp",
+    "category": ["appliances"],
+    "description": "Trusted home appliances — washing machines, refrigerators, and more.",
+    "featured": true,
+    "order": 9
+  },
+  {
+    "id": "bosch",
+    "name": "Bosch",
+    "slug": "bosch",
+    "logo": "/brands/bosch.webp",
+    "category": ["appliances"],
+    "description": "German engineering excellence for home and kitchen appliances.",
+    "featured": false,
+    "order": 10
+  },
+  {
+    "id": "sony",
+    "name": "Sony",
+    "slug": "sony",
+    "logo": "/brands/sony.webp",
+    "category": ["mobile", "tv", "audio"],
+    "description": "Cutting-edge technology from Sony across mobiles, TVs, and audio.",
+    "featured": false,
+    "order": 11
+  },
+  {
+    "id": "panasonic",
+    "name": "Panasonic",
+    "slug": "panasonic",
+    "logo": "/brands/panasonic.webp",
+    "category": ["appliances", "tv"],
+    "description": "Reliable home electronics and appliances from Panasonic.",
+    "featured": false,
+    "order": 12
+  }
+]

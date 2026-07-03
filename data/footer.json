@@ -1,0 +1,53 @@
+{
+  "brand": {
+    "name": "Aone Digital India",
+    "tagline": "Your Trusted Electronics Destination",
+    "logo": "/logos/logo-white.svg",
+    "description": "Aone Digital India is your one-stop destination for premium mobile phones and home appliances. We offer genuine products, competitive prices, and excellent after-sales service."
+  },
+  "linkGroups": [
+    {
+      "id": "quick-links",
+      "title": "Quick Links",
+      "links": [
+        { "label": "Home", "href": "/" },
+        { "label": "About Us", "href": "/about" },
+        { "label": "Brands", "href": "/brands" },
+        { "label": "Categories", "href": "/categories" },
+        { "label": "Offers", "href": "/offers" },
+        { "label": "Gallery", "href": "/gallery" },
+        { "label": "Contact", "href": "/contact" }
+      ]
+    },
+    {
+      "id": "categories",
+      "title": "Shop By Category",
+      "links": [
+        { "label": "Smartphones", "href": "/categories/smartphones" },
+        { "label": "Washing Machines", "href": "/categories/washing-machines" },
+        { "label": "Refrigerators", "href": "/categories/refrigerators" },
+        { "label": "Televisions", "href": "/categories/televisions" },
+        { "label": "Air Conditioners", "href": "/categories/air-conditioners" },
+        { "label": "Laptops", "href": "/categories/laptops" }
+      ]
+    },
+    {
+      "id": "support",
+      "title": "Customer Support",
+      "links": [
+        { "label": "Contact Us", "href": "/contact" },
+        { "label": "EMI Options", "href": "/emi" },
+        { "label": "Exchange Policy", "href": "/exchange" },
+        { "label": "Warranty Info", "href": "/warranty" },
+        { "label": "Service Centers", "href": "/service" },
+        { "label": "FAQ", "href": "/#faq" }
+      ]
+    }
+  ],
+  "legal": [
+    { "label": "Privacy Policy", "href": "/privacy" },
+    { "label": "Terms of Service", "href": "/terms" },
+    { "label": "Sitemap", "href": "/sitemap.xml" }
+  ],
+  "copyright": "© 2025 Aone Digital India. All Rights Reserved."
+}
