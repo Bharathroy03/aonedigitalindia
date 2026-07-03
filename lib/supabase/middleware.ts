@@ -35,7 +35,11 @@ export async function updateSession(request: NextRequest) {
   );
 
   // Refresh session — required for Server Components
-  await supabase.auth.getUser();
+  try {
+    await supabase.auth.getUser();
+  } catch (error: any) {
+    console.warn('[Supabase Middleware] Session refresh connection failed:', error.message);
+  }
 
   return supabaseResponse;
 }
