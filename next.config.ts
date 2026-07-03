@@ -5,6 +5,9 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 });
 
 const nextConfig: NextConfig = {
+  // Constrain workspace root for Next.js file tracing to the project directory
+  outputFileTracingRoot: process.cwd(),
+
   // ─── Experimental ───────────────────────────────────────────────────
   experimental: {
     // Enable React 19 features

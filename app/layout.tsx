@@ -92,6 +92,9 @@ export const metadata: Metadata = {
   },
 };
 
+import Navbar from '@/components/navbar/Navbar';
+import Footer from '@/components/footer/Footer';
+
 // ─── Root Layout ──────────────────────────────────────────────────────────────
 
 export default function RootLayout({
@@ -105,18 +108,21 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${plusJakartaSans.variable} ${libreCaslonText.variable}`}
     >
-      <body className="antialiased">
+      <body className="antialiased min-h-screen flex flex-col">
         {/* Skip link for accessibility */}
         <a href="#main-content" className="skip-link">
           Skip to main content
         </a>
 
-        {/* Providers will wrap children here */}
-        {/* TODO: Add ThemeProvider, AnalyticsProvider */}
+        {/* Navigation header */}
+        <Navbar />
 
-        <main id="main-content" role="main">
+        <main id="main-content" role="main" className="flex-grow">
           {children}
         </main>
+
+        {/* Footer */}
+        <Footer />
       </body>
     </html>
   );

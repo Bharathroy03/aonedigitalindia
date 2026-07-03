@@ -9,35 +9,50 @@ export const metadata: Metadata = {
   },
 };
 
-/**
- * Homepage
- *
- * Sections:
- * 1. Hero — Full-screen hero with slider and CTA
- * 2. Brands — Brand logo showcase/marquee
- * 3. Categories — Product category cards
- * 4. Featured Offers — Current deals and promotions
- * 5. Why Choose Us — USP section with stats
- * 6. Featured Products — Top product cards
- * 7. Gallery — Store photo gallery
- * 8. Testimonials — Customer reviews
- * 9. FAQ — Frequently asked questions
- * 10. Contact — Contact form + map + info
- *
- * TODO: Import and render all section components
- */
-export default function HomePage() {
+import Hero from '@/components/hero/Hero';
+import BrandsSection from '@/components/brands/BrandsSection';
+import CategoriesSection from '@/components/categories/CategoriesSection';
+import WhyChooseUsSection from '@/components/why-choose-us/WhyChooseUsSection';
+import OffersSection from '@/components/offers/OffersSection';
+import GallerySection from '@/components/gallery/GallerySection';
+import TestimonialsSection from '@/components/testimonials/TestimonialsSection';
+import FAQSection from '@/components/faq/FAQSection';
+import ContactSection from '@/components/contact/ContactSection';
+import ParallaxProvider from '@/providers/ParallaxProvider';
+
+import { getFeaturedBrands } from '@/services/brands.service';
+import {
+  getAllCategories,
+  getFeaturedOffers,
+  getAllGallery,
+  getFeaturedTestimonials,
+  getFeaturedFAQ,
+} from '@/services/content.service';
+import { getFeaturedProducts } from '@/services/products.service';
+
+export default async function HomePage() {
+  // Parallel fetch on Server Component (fallback to json automatically via initialStates)
+  const [brands, categories, offers, images, reviews, faqs, products] = await Promise.all([
+    getFeaturedBrands().catch(() => []),
+    getAllCategories().catch(() => []),
+    getFeaturedOffers().catch(() => []),
+    getAllGallery().catch(() => []),
+    getFeaturedTestimonials().catch(() => []),
+    getFeaturedFAQ().catch(() => []),
+    getFeaturedProducts(20).catch(() => []),
+  ]);
+
   return (
-    <>
-      {/* TODO: <Hero /> */}
-      {/* TODO: <BrandsSection /> */}
-      {/* TODO: <CategoriesSection /> */}
-      {/* TODO: <OffersSection /> */}
-      {/* TODO: <WhyChooseUsSection /> */}
-      {/* TODO: <GallerySection /> */}
-      {/* TODO: <TestimonialsSection /> */}
-      {/* TODO: <FAQSection /> */}
-      {/* TODO: <ContactSection /> */}
-    </>
+    <ParallaxProvider>
+      <Hero />
+      <BrandsSection brands={brands} />
+      <CategoriesSection categories={categories} />
+      <WhyChooseUsSection />
+      <OffersSection offers={offers} />
+      <GallerySection images={images} />
+      <TestimonialsSection reviews={reviews} />
+      <FAQSection faqs={faqs} />
+      <ContactSection productList={products} />
+    </ParallaxProvider>
   );
 }
